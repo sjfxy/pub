@@ -11,6 +11,7 @@ const webContent = "Hello World!"
 func main() {
 	http.HandleFunc("/", helloHandler)
 	log.Fatal(http.ListenAndServe(":80", nil))
+	fmt.Println("ces")
 }
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
